@@ -30,6 +30,7 @@ fun ReplyApp(
     windowSize : WindowWidthSizeClass,
     modifier: Modifier = Modifier,
 ) {
+    val navigationType: ReplyNavigationType
     val viewModel: ReplyViewModel = viewModel()
     val replyUiState = viewModel.uiState.collectAsState().value
 
